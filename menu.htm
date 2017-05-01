@@ -1,0 +1,110 @@
+<html>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Navegação</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">Registro de Compras Embarcado</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+            	<li class="dropdown-alert">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                         <i class="fa fa-bell fa-fw"></i> 
+                    </a>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <li>
+                	<div id="notificacao">
+                		<h5 id="notificacao-msg"><a href="notificacoes.php" >Nenhuma nova notificação.</a> </h5>
+                    </div>
+                </li>
+                <!-- /.dropdown -->
+            	<li class="dropdown dropdown-config">
+                    <a id="toggle-config" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-gear fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul id="configuracoes" class="dropdown-menu">
+                    	<li><a>Configurações</a></li>
+                        <li class="divider"></li>
+                        <li><a id="btn-configurar-caixas" href="#"><i class="fa fa-desktop fa-fw"></i> Configurar Caixas</a></li>
+                    </ul>
+                    
+                    <!-- /.dropdown-configuração -->
+                </li>
+                <div id="configurar-caixas" class="dropdown-menu">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Configurar Caixas</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <form id="form-configurar-caixas" role="form">
+                                                <div class="form-group">
+                                                	<h5>Selecione o separador a ser utilizado pelo sistema:</h5>
+                                                    <input id="separador" name="separador" type="text" class="form-control" placeholder="exemplos: enter, tab, esc, espaco">
+                                                </div>
+                                            <button id="configurar-caixas-confirma" class="btn btn-success btn-hblock">confirmar</button>
+                                            <button id="configurar-caixas-cancela" class="btn btn-defatul btn-hblock">cancelar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- nav navbar-top-links -->
+        </nav>
+        <!-- /.navbar-static-top -->
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                	<li id="charts" class="pull45down">
+                        <div id="carrinhos-chart"></div>
+                    </li>
+                    <li>                          
+                        <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Acompanhar</a>
+                    </li>
+                    <li>
+                        <a href="carrinhos.php"><i class="fa fa-shopping-cart fa-fw"></i> Carrinhos</a>
+                    </li>
+                    <li>
+                        <a href="caixas.php"><i class="fa fa-desktop fa-fw"></i> Caixas</a>
+                    </li>
+                    <li>
+                        <a href="produtos.php"><i class="fa fa-barcode fa-fw"></i> Produtos</a>
+                    </li>
+                     <li>
+                        <a href="lotes.php"><i class="fa fa-archive fa-fw"></i> Lotes</a>
+                    </li>
+                    <li>
+                        <a href="itens.php"><i class="fa fa-coffee fa-fw"></i> Itens</a>
+                    </li>
+                </ul>
+                <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+        </nav>
+        <!-- /.navbar-static-side -->
+     
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+        
+    <!-- Arquivos necessários para o carregamento do menu  -->
+	<script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="js/plugins/morris/morris.js"></script>    
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script> 
+    
+    <script src="js/registroembarcado.menu.js"></script> 
+    
+    <script src="js/plugins/validate/jquery.validate.min.js"></script>
+    
+    <script>
+		$(document).ready(function() {
+            menu();
+        });
+	</script>
+    
+</html>

@@ -1,0 +1,11 @@
+/comm.php?caixa=1&IR=ABC&pagina=1
+comm.php
+comm.php
+
+resposta: "0", "ENTER", "2", "1234567890", "0987654321";
+
+[proxima página], [separador], [quantidade de códigos], [código 1], [código 2]
+
+os separadores são:
+
+ESPACO, TAB, ENTER e ESC

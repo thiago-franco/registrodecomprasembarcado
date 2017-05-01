@@ -1,0 +1,399 @@
+/* Global */
+
+/* ------------------------------- */
+
+ body {
+    background-color: #f8f8f8;
+}
+
+/* Wrappers */
+
+/* ------------------------------- */
+
+ #wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 0 50px;
+    min-height: 690px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        min-height: 1300;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+/* Navegação */
+
+.navbar-static-side ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* ------------------------------- */
+
+/* Navegação Superior Direita Dropdown */
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+.dropdown : active {
+	background-color:#F00;	
+}
+
+/* Sidebar Menu */
+
+ .sidebar-search {
+    padding: 15px;
+}
+
+.arrow {
+    float: right;
+}
+
+.fa.arrow:before {
+    content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107";
+}
+
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important;
+}
+
+.nav-second-level li a {
+    padding-left: 37px;
+}
+
+.nav-third-level li a {
+    padding-left: 52px;
+}
+
+@media(min-width:768px) {
+    .navbar-static-side {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+	
+		.navbar-default{
+	 	position:fixed
+ 	}
+ 
+	.navbar-static-top {
+		width: 100%;
+	}
+	
+	.wrapper-row {
+		padding-top:30px;	 
+ 	}
+}
+
+@media(max-width:768px){
+	.dropdown-config {
+		float: left;
+		padding-top: -160%;
+	}
+}
+
+/* Botões */
+
+ .btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.btn-outline:focus{
+	outline: none !important;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+/* Containers Flot Chart */
+
+ .flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* DataTables */
+
+ table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    background: transparent;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: "\f0de";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "\f0dd";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting:after {
+    content: "\f0dc";
+    float: right;
+    font-family: fontawesome;
+    color: rgba(50,50,50,.5);
+}
+
+.dataTables_filter {
+	float:left;	
+    padding-right: 20px;
+} 
+
+/* Botões Circulares */
+
+ .btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.428571429;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.show-grid [class^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #eee !important;
+}
+
+.show-grid {
+    margin: 15px 0;
+}
+
+#alerta {
+    display:none;   
+}
+
+#adicionar-body {
+	display:none;	
+}
+
+#adicionar-confirma {
+	float: right;
+}
+
+.tabela-alerta {
+    width: 100%;
+}
+
+.botao-direita {
+    float: right;
+}
+
+.form-alerta {
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.btn-double {
+    margin-right: -1.5%;
+    margin-left: -1.5%;
+    margin-top: -0.5%;
+}
+ .btn-excluir {
+     background-color: #FF6359;
+     float: right;
+     border: none;
+ 	 border-top-right-radius: 0.5px;
+	 border-bottom-right-radius: 0.5px;
+ }
+
+ .btn-alterar {
+     background-color: #87CEFA;
+     float: left;
+	 border: none;
+	 border-top-left-radius: 0.5px;
+	 border-bottom-left-radius: 0.5px;
+ }
+
+ .btn-alterar:focus, .btn-excluir:focus{
+     outline: 0;
+ }
+ 
+ #timeline-msg {
+	display: none;	 
+ }
+ 
+ .fixo {
+		position: fixed;
+		width: 50%; 
+ } 
+ 
+ @media(max-width:1200px) {
+	.fixo {
+		position: relative;
+		width: 100%;
+	} 
+ }
+  
+ .div-compra {
+	display: none;	 
+ }
+ 
+ .btn-compra {
+	outline: 0;	 
+ }
+ 
+ .btn-hblock {
+	padding-left:3px;
+	width:49%;	 
+ }
+ 
+ .btn-hblock:focus {
+ 	outline:none;
+ }
+ 
+ #form-configurar-caixas {
+	height:100%;
+	width:100%;	 
+ }
+ 
+ #notificacao {
+	display: none;	 
+ }
+ 
+ #notificacao-msg {
+    color:#428BCA; 
+	width:700px; 
+	height:3px;
+ } 
+ 
+ #itens-compra {
+	overflow:auto;
+	max-height:413px;	 
+ }
+ 
+ .pull45down {
+	 height:100%;
+	 width:100%;
+	padding-top: 45px;
+ }
